@@ -1,0 +1,638 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#resume-header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(1px);
+    text-align: center;
+    color: white;
+}
+
+.list {
+    width: 70%;
+    margin: auto;
+}
+.nav-list {
+    height: 40%;
+    width: 70%;
+    padding: 10px;
+}
+
+.list ul{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.list ul a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    transition: color 0.4s, border-bottom 4s;
+}
+
+.nav-list ul a {
+    font-size: 20px;
+    font-weight: 200px;
+}
+
+.nav-list ul a:hover{
+    color: lightgray;
+    border-bottom: 1px solid white;
+}
+
+#back-img  {
+    background-image: url("./keyboard.jpg");
+    background-position: bottom;
+    background-size: cover;
+    /* opacity: 0.7; */
+    position: relative;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.personal-info {
+    text-align: center;
+}
+.social {
+    width: 50%;
+    margin: auto;
+}
+.social ul{
+    padding: 10px;
+}
+
+.social ul a:hover{
+    color: lightgray;
+}
+
+
+/** main **/
+.main {
+    text-align: center;
+}
+#my-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    top: -140px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 6px 2px white
+}
+
+
+#my-image img { 
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+}
+
+#description {
+    width: 75%;
+    margin: auto;
+}
+
+#about {
+    margin-top: -30px;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+    word-break: break-all;
+}
+
+#skills {
+    width: 100%;
+    min-height: 36vh;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.skill-logo {
+    font-size: 2rem;
+    color: #3333c0;
+    padding-top: 31px;
+    padding-bottom: 1%;
+}
+
+.skill-list {
+    margin: 1% auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.outer {
+    width: 140px;
+    height: 30px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 21px;
+    color: white;
+    position: relative;
+}
+
+.typescript {
+    background-color: #1a1a56;
+    width: 75%;
+}
+.java {
+    background-color: #54ff00b8;
+    width: 80%;
+}
+.javascript {
+    background-color: #9a01fa;
+    width: 90%;
+}
+.react {
+    background-color: #ea04ff;
+    width: 90%;
+}
+.nodejs {
+    background-color: #df1515c2;
+    width: 90%;
+}
+.mysql {
+    background-color: #ffcb0ff2;
+    width: 80%;
+}
+.aws {
+    background-color: #ef8409;
+    width: 50%;
+}
+.mongo {
+    background-color: #0e7aed;
+    width: 80%;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 21px 0 0 21px;
+}
+
+.outer span {
+    position: absolute;
+    top: 5px;
+    left: 23px;
+}
+
+.social .list i {
+    transition: box-shadow 0.5s;
+}
+.social .list i:hover {
+    box-shadow: 0 0 5px 2px white;
+}
+
+#portfolio {
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.skill-card {
+    width: 270px;
+    height: 230px;
+    margin: 20px;
+}
+
+.skill-card img{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(35deg, #2857a4 22%, #403066);
+    color: white;
+}
+
+.form-address {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.details-input form {
+    display: flex;
+    flex-direction: column;
+}
+.details-input  {
+    /* width: 40%; */
+}
+
+.info-logo {
+    font-size: 2rem;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    margin: auto;
+}
+
+.form-address {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-input  input, .details-input  textarea {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    color: darkgray;
+    font-size: 19px;
+}
+
+.details-input  textarea {
+    font-size: 22px;
+}
+
+.my-address {
+    width: 30%;
+    text-align: left;
+}
+
+.actual-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.actual-address span {
+    margin: 5px;
+}
+
+button {
+    width: 200px;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    margin: 50px auto;
+    border: 2px solid white;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+#work-experience {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.work-experience-container {
+    width: 45%;
+    /* min-height: 200px; */
+    position: relative;
+    font-size: 1.3rem;
+    left: 0;
+}
+
+.education-container {
+    width: 35%;
+    padding: 5%
+}
+
+.work-experience-container:nth-child(2n) {
+    left: 55%;
+}
+
+#line {
+    position: absolute;
+    top: 9%;
+    bottom: 6%;
+    left: 50.5%;
+    width: 0;
+    border-left: 3px dotted darkgray;
+    width: 0px;
+}
+
+#plane {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+    font-size: 2rem;
+    margin-left: -5px;
+    margin-top: -18px;
+    color: #3333c0;
+    z-index: 2;
+}
+
+#experience {
+    text-align: center;
+}
+
+.skill-heading  {
+    margin-left: 11px;
+}
+
+.work-experience-container:nth-child(2n):after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: lightgray;
+    left: -11.5%;
+    top: 50%;
+    border-radius: 50%;
+}
+
+.work-experience-container:nth-child(2n + 1):after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: lightgray;
+    left: 111%;
+    top: 50%;
+    border-radius: 50%;
+}
+
+.experience-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+.company-logo {
+    width: 40%;
+    height: 32px;
+    background: linear-gradient( 40deg, rgba(95, 75, 182, 1) 17%, rgba(17, 204, 207, 1) 100% );
+    margin-top: 5%;
+}
+
+.education-logo {
+    width: 10%;
+    height: 10%;
+}
+
+.company-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.education-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.designation {
+    text-align: right;
+}
+
+.designation-education {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.designation-name {
+    color: hsl(217.26deg 60.78% 40%);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.college-name {
+    color: hsl(217.26deg 60.78% 40%);
+    font-weight: 500;
+}
+
+.company-name {
+    color: hsl(34.64deg 72.41% 54.51%);
+}
+
+.experience-years {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.college-years {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.experience-description {
+    text-align: left;
+    word-break: break-all;
+    color: darkgray;
+}
+
+footer .social .list ul {
+    font-size: 1.3rem;
+}
+
+#professional-summary {
+    text-align: center;
+    padding: 1%;
+    width: 80%;
+    margin: auto;
+}
+#professional-summary-list {
+    text-align: left;
+    font-size: 1.3rem;
+}
+#professional-summary-list ul {
+    list-style: none;
+}
+#professional-summary-list ul li {
+    padding: 1%;
+}
+#professional-summary-list ul li::before{
+    content: "❖ ";
+}
+
+.experience-label {
+    color: #404040;
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+    font-size: 1.4rem;
+}
+
+.product-name a {
+    text-decoration: none;
+}
+
+.list-logo {
+    color: #404040;
+}
+
+#twelveth-image {
+    width: 25%;
+    height: 20%;
+}
+
+#twelveth-image img {
+    width: 100%;
+    height: 100%;
+}
+.BE-logo {
+    width: 20%;
+    height: 10%;
+}
+
+.BE-logo img {
+    width: 100%;
+    height: 100%;
+}
+#cdac {
+    width: 25%;
+    height: 20%;
+}
+#cdac img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 800px) {
+    .work-experience-container:nth-child(2n + 1):after {
+        left: 110%;
+    }
+
+    .work-experience-container:nth-child(2n):after {
+        left: -12.5%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .BE-logo {
+        width: 28%;
+        height: 10%;
+    }
+
+    #line {
+        left: 99%;
+    }
+
+    .work-experience-container:nth-child(2n) {
+        left: 0;
+    }
+
+    .work-experience-container {
+        width: 86%;
+        margin-bottom: 30px;
+    }
+
+    .work-experience-container:nth-child(2n + 1):after {
+        left: 112%;
+    }
+
+    .work-experience-container:nth-child(2n):after {
+        left: 112%;
+    }
+
+    #plane {
+        font-size: 1.8rem;
+    }
+
+    .my-address {
+        width: 76%;
+        word-break: break-all;
+    }
+
+    .list ul {
+        padding: 5px;
+        width: 90%;
+    }
+
+    .list {
+        width: 90%;
+    }
+
+    .social {
+        width: 90%;
+    }
+
+    .info-logo {
+        padding-bottom: 0;
+    }
+
+    #back-img {
+        height: 50vh;
+    }
+    .nav-list {
+        height: 18%;
+    }
+
+    #resume-header .list ul li{
+        padding: 6px 5px;
+    }
+
+    #navigation-list {
+        display: none;
+    }
+
+    .personal-info {
+        padding-top: 30px;
+    }
+
+    /* .skill-logo {
+        padding-bottom: 19px;
+    } */
+
+    /* .skill-list {
+        margin: 1% auto;
+    } */
+
+    #professional-summary {
+        padding: 6%;
+    }
+
+    .education-container {
+        padding: 0;
+    }
+
+    #twelveth-image {
+        width: 38%;
+    }
+
+    #cdac {
+        width: 59%;
+        height: 35%;
+    }
+}
